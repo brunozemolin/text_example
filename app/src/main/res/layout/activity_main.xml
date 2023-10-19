@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/containerLetterPlus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/letterPlus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/font"
+            android:tint="#000000"
+            tools:ignore="UseAppTint" />
+
+        <ImageView
+            android:id="@+id/plusTextSize"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/plus"
+            android:tint="#000000"
+            tools:ignore="UseAppTint" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/containerLetterMinus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@id/containerLetterPlus"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/letterMinus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/font"
+            android:tint="#000000"
+            tools:ignore="UseAppTint" />
+
+        <ImageView
+            android:id="@+id/minusTextSize"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/minus"
+            android:tint="#000000"
+            tools:ignore="UseAppTint" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/changeTextStyle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@id/containerLetterMinus"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/letter"
+        android:tint="#000000"
+        tools:ignore="UseAppTint" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/rotateText"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_below="@id/changeTextStyle"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:src="@drawable/change"-->
+<!--        android:tint="#000000"-->
+<!--        tools:ignore="UseAppTint" />-->
+
+    <RelativeLayout
+        android:id="@+id/containerRotatePlus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@id/changeTextStyle"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/rotatePlus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/change"
+            android:tint="#000000"
+            tools:ignore="UseAppTint" />
+
+        <ImageView
+            android:id="@+id/changePlus"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/plus"
+            android:tint="#000000"
+            tools:ignore="UseAppTint" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/containerRotateMinus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@id/containerRotatePlus"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/rotateMinus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/change"
+            android:tint="#000000"
+            tools:ignore="UseAppTint" />
+
+        <ImageView
+            android:id="@+id/changeMinus"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/minus"
+            android:tint="#000000"
+            tools:ignore="UseAppTint" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edtTextInsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="@android:color/transparent"
+        android:layout_centerInParent="true"
+        tools:text="Text"/>
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textview2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hello World aaaaaaa" />-->
+
+
+    <View
+        android:id="@+id/vTrashArea"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:layout_above="@+id/trash"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <ImageView
+        android:id="@+id/trash"
+        android:visibility="gone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:tint="#000000"
+        android:src="@drawable/trash"
+        tools:ignore="UseAppTint" />
+
+</RelativeLayout>
